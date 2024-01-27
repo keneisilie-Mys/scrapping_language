@@ -11,4 +11,4 @@ Coz i wanted to keep codes i can access anywhere n also feel like im contributin
 
 Damn im enjoying writing this readme more than i did coding. Coding readme hehe 
 
-#Live made easy by Python ^^
+# Live made easy by Python ^^
