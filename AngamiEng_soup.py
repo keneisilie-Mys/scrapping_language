@@ -5,7 +5,7 @@ import time
 listA=[]
 listE=[]
 
-def scrapeChapter(book, chapter_no):
+def scrapeChapter(book, chapter_no+1):
     chapter_urlsA = [f"https://www.bible.com/bible/338/{book}.{i}.ANBRBSI" for i in range(1,chapter_no)]  #Links can be changed according to need
     chapter_urlsE = [f"https://www.bible.com/bible/12/{book}.{i}.ASV" for i in range(1,chapter_no)]
 
@@ -68,8 +68,9 @@ def scrapeChapter(book, chapter_no):
 
 
 ########################################################################
-books = ["GEN", "EXO", "LEV", "NUM", "DEU", "JOS", "JDG", "RUT", "1SA", "2SA", "1KI", "2KI", "1CH", "2CH", "EZR", "NEH", "EST", "JOB"] #can add more books
-chapters = [50, 40, 27, 36, 34, 24, 21, 4, 31, 24, 22, 25, 29,36, 10, 13, 10, 42] # Make sure this chapter no. matches the book order 
+books = ["GEN", "EXO", "LEV", "NUM", "DEU", "JOS", "JDG", "RUT", "1SA", "2SA", "1KI", "2KI", "1CH", "2CH", "EZR", "NEH", "EST", "ECC", "LAM", "DAN", "HOS", "JON", "ZEC", "MAT", "MRK", "LUK", "JHN", "ACT", "ROM", "1CO", "2CO", "GAL", "EPH", "PHP", "COL", "1TH", "2TH", "1TI", "2TI", "TIT", "PHM", "HEB", "JAS", "1PE", "2PE", "1JN", "2JN", "3JN", "JUD", "REV"]
+chapters = [50, 40, 27, 36, 34, 24, 21, 4, 31, 24, 22, 25, 29,36, 10, 13, 10, 12, 5, 12, 14, 4, 14, 28, 16, 24, 21, 28, 16, 16, 13, 6, 6,4,4, 5, 3, 6,4,3,1, 13, 5, 5, 3, 5,1,1, 1, 22]
+
 
 
 for idx, book in enumerate(books):
